@@ -153,39 +153,39 @@
                 </plugin>
                 <!--this plugin can be used instead of fabric8 for image creation and pushing to registry-->
                 <!--<plugin>-->
-                <!--<groupId>com.spotify</groupId>-->
-                <!--<artifactId>docker-maven-plugin</artifactId>-->
-                <!--<version>1.0.0</version>-->
-                <!--<configuration>-->
-                <!--<imageName>multiplexor88/${project.artifactId}</imageName>-->
-                <!--<dockerDirectory>${project.basedir}/docker</dockerDirectory>-->
-                <!--<resources>-->
-                <!--<resource>-->
-                <!--<targetPath>/</targetPath>-->
-                <!--<directory>${project.build.directory}</directory>-->
-                <!--<include>${project.build.finalName}.jar</include>-->
-                <!--</resource>-->
-                <!--</resources>-->
-                <!--<serverId>registry.hub.docker.com</serverId>-->
-                <!--&lt;!&ndash;<pushImage>true</pushImage>&ndash;&gt;-->
-                <!--<registryUrl>https://hub.docker.com/r/multiplexor88/</registryUrl>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                <!--<execution>-->
-                <!--<id>build-image</id>-->
-                <!--<phase>package</phase>-->
-                <!--<goals>-->
-                <!--<goal>build</goal>-->
-                <!--</goals>-->
-                <!--</execution>-->
-                <!--<execution>-->
-                <!--<id>push-image</id>-->
-                <!--<phase>install</phase>-->
-                <!--<goals>-->
-                <!--<goal>push</goal>-->
-                <!--</goals>-->
-                <!--</execution>-->
-                <!--</executions>-->
+                    <!--<groupId>com.spotify</groupId>-->
+                    <!--<artifactId>docker-maven-plugin</artifactId>-->
+                    <!--<version>1.0.0</version>-->
+                    <!--<configuration>-->
+                        <!--<imageName>multiplexor88/${project.artifactId}</imageName>-->
+                        <!--<dockerDirectory>${project.basedir}/docker</dockerDirectory>-->
+                        <!--<resources>-->
+                            <!--<resource>-->
+                                <!--<targetPath>/</targetPath>-->
+                                <!--<directory>${project.build.directory}</directory>-->
+                                <!--<include>${project.build.finalName}.jar</include>-->
+                            <!--</resource>-->
+                        <!--</resources>-->
+                        <!--<serverId>registry.hub.docker.com</serverId>-->
+                        <!--&lt;!&ndash;<pushImage>true</pushImage>&ndash;&gt;-->
+                        <!--<registryUrl>https://hub.docker.com/r/multiplexor88/</registryUrl>-->
+                    <!--</configuration>-->
+                    <!--<executions>-->
+                        <!--<execution>-->
+                            <!--<id>build-image</id>-->
+                            <!--<phase>package</phase>-->
+                            <!--<goals>-->
+                                <!--<goal>build</goal>-->
+                            <!--</goals>-->
+                        <!--</execution>-->
+                        <!--<execution>-->
+                            <!--<id>push-image</id>-->
+                            <!--<phase>install</phase>-->
+                            <!--<goals>-->
+                                <!--<goal>push</goal>-->
+                            <!--</goals>-->
+                        <!--</execution>-->
+                    <!--</executions>-->
                 <!--</plugin>-->
                 <plugin>
                     <groupId>io.fabric8</groupId>
